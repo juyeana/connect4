@@ -1,0 +1,43 @@
+#board{
+  position: relative;
+}
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+  
+}
+
+.piece {
+  /* TODO: make into circles */
+  margin: 2px;
+  width: 45px;
+  height: 45px;
+  border-radius: 90%;
+  animation-name:slide;
+  animation-direction: normal;
+  animation-duration: .3s;
+  position: absolute;
+ 
+}
+
+
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+.piece.p1 {
+  background-color: red;
+}
+
+.piece.p2 {
+  background-color: rgb(0, 50, 143);
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
