@@ -101,7 +101,7 @@ function placeInTable(y, x) {
   document.head.appendChild(styleSheet);
 
   // get a dot position dynamically
-  let top = 6,
+  let top = 0,
     left = 56 * x + 4;
   let bottom = 56 * y + 60;
 
@@ -180,7 +180,8 @@ function checkForWin() {
 
   // TODO: read and understand this code. Add comments to help you.
 
-  // iterate over the row
+  // Iterate HEIGHT TIMES * WIDTH TIMES to define the positions on the board horizontally, vertically, diagonally to check if the current player gets circles four in a row.  
+
   for (let y = 0; y < HEIGHT; y++) {
     //iterate over  the column
     for (let x = 0; x < WIDTH; x++) {
